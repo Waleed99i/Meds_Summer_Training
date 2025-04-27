@@ -187,8 +187,10 @@ To search for "computing" in file1.txt file
 grep "computing" file1.txt
 ```
 ##### cut:
-To cut some specific part from a file , use `cut` like :
-Get characters 5-10 from each line
+To cut some specific part from a file , use `cut` l
+
+##### Example:
+To get characters 5-10 from each line
 ```bash
 cut -c5-10 file1.txt
 ```
