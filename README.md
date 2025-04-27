@@ -14,4 +14,4 @@
 - [ ] Verilator
 - [ ] GTKWave
 
-Shell Scripting Tutorial is in the `readme.md` of `module_1` directory
+Shell Scripting Tutorial is in the `readme.md` of `Module_1` directory
