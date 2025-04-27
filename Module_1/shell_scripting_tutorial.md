@@ -40,14 +40,14 @@ echo $SHELL
 
 ![checking shell](./images/1.png)
 
-# 2.Your First Script
+## 2.Your First Script
 
-## Create a file named `myscript.sh`:
+##### Create a file named `myscript.sh`:
 ```bash
 vim myscript.sh
 ```
 (Make sure you have vim otherwise you may use `nano myscript.sh`) . if using vim click on `i` and then type 
-```
+```bash
 #!/bin/bash
 echo "Hello, Shell World!"
 ```
@@ -64,33 +64,45 @@ just like below
 
 ## 3.Working with Files and Directories
 #### Create a directory:
+To create a new directory , use `mkdir` as:
 
-
-
-`mkdir new_project`
+```bash
+mkdir new_project
+```
 
 #### Move into a directory:
-
-`cd new_project`
+To move into a directory , use `cd` as:
+```bash
+cd new_project
+```
 
 #### Getting the list of files inside the current directory:
+to get the list of files inside current directory , use `ls` as:
 
-`ls`
+```bash
+ls
+```
 Since you have just made it so it'll be empty for now . Don't panic
 
 #### Create multiple files:
-
-`touch file{1..5}.txt`
+To create a file / multiple files , use `touch` as:
+```bash
+touch file{1..5}.txt
+```
 
 #### Remove files:
-
-`rm file1.txt`
+To remove a file , use `rm` as:
+```bash
+rm file1.txt
+```
 
 ![commands](./images/3.png)
 
 #### Remove directory:
-
-`rmdir new_project`
+To remove a directory , use `rmdir` as:
+```bash
+rmdir new_project
+```
 
 
 
@@ -98,14 +110,16 @@ Since you have just made it so it'll be empty for now . Don't panic
 #### Pipe (|):
 It connects output of one command into another.
 
-
-`ls | grep "project"`
+```bash
+ls | grep "project"
+```
 grep is used to search text in file (has been exaplained in this tutorial )
 
 #### Redirection (> and >>):
 It sends output to a file.
-
-`echo "Backup complete" > backup.log`
+```bash
+echo "Backup complete" > backup.log
+```
 
 You may wonder that I don't have backup.log file . Don't worry it will automatically make and write "Backup Complete" there . It is its beauty!!
 
@@ -122,46 +136,67 @@ I am writing paragraph in file1.txt
 
 #### Viewing file
 ###### View entire file
-`cat filename.txt`
+Use `cat` command for viewing entire file.
+```bash
+cat filename.txt
+```
 
 
 ###### View first 2 lines
-`head -n 2 filename.txt`
+For viewing from head ,use `head -n ` as:
+```bash
+head -n 2 filename.txt
+```
 
 
 ###### View last 3 lines
-`tail -n 3 filename.txt`
-
+For viewing from tail , use `tail -n ` as:
+```bash
+tail -n 3 filename.txt
+```
 #### EXAMPLE:
 ![6](./images/6.png)
 
 #### Copying/Moving File
 ###### Copy file
-`cp source.txt destination.txt`
-
+To copy file ,use `cp` like :
+```bash
+cp source.txt destination.txt
+```
 ###### Move/rename file
-`mv oldname.txt newname.txt`
+To move/rename file , use `mv` as:
+```bash
+mv oldname.txt newname.txt
+```
 
 ###### Move file to different directory
-`mv file.txt /path/to/directory/`
-
+To move file to different directory , use `mv` as:
+```bash
+mv file.txt /path/to/directory/
+```
 #### EXAMPLE
 ![7](./images/7.png)
 
 
 ## 6.Working with Text Files
 ###### grep:
+Use `grep` to search for some text in a file .
+##### For Instance:
 Search for "computing" in text1.txt file
-`grep "computing" file1.txt`
-
+```bash
+grep "computing" file1.txt
+```
 ###### cut:
+To cur some specific part from a file , use `cut` like :
 Get characters 5-10 from each line
-`cut -c5-10 file1.txt`
-
+```bash
+cut -c5-10 file1.txt
+```
 ###### paste:
-Merge two files line by line
-`paste file1.txt backup.log`
-
+To ,erge two files line by line , use `paste` as:
+```bash
+paste file1.txt backup.log
+```
 ![files](./images/8.png)
 
 ## 7.Variables and Substitution
@@ -195,7 +230,7 @@ Merge two files line by line
 - type `Esc`
 - type `:wq`
 - then type `enter` 
-```
+```bash
 read -p "Enter a number: " num
 if [ $num -gt 0 ]; then
     echo "Positive number"
@@ -236,7 +271,7 @@ fi
 ### For Loop:
 #### - Basic Number Range Loop
 Repeat the same steps as you did in If-Else Conditions
-```
+```bash
 for i in {1..5}; do
     echo "Number: $i"
 done
@@ -245,7 +280,7 @@ You will get output like :
 ![11](./images/11.png)
 
 #### - Loop Through Files
-```
+```bash
 for file in *.txt; do
     echo "Found file: $file"
     wc -l "$file"  # Count lines
@@ -253,7 +288,7 @@ done
 ```
 #### -  C-Style Loop with Math
 #### E.g: Power of 2
-```
+```bash
 for (( i=0; i<=5; i++ )); do
     power=$(( 2**i ))
     echo "2^$i = $power"
@@ -264,7 +299,7 @@ You wil get Output like:
 ![12](./images/12.png)
 
 ### While Loop:
-```
+```bash
 count=1
 while [ $count -le 5 ]
 do
@@ -278,7 +313,7 @@ You will get Output like:
 
 ## 11.Functions
 Use functions to keep scripts modular and clean.
-```
+```bash
 greet() {
     echo "Welcome, $1!"
 }
