@@ -42,7 +42,7 @@ echo $SHELL
 
 ## 2.Your First Script
 
-##### Create a file named `myscript.sh`:
+ Create a file named `myscript.sh`:
 ```bash
 vim myscript.sh
 ```
@@ -134,22 +134,22 @@ I am writing paragraph in file1.txt
 
 ![5](./images/5.png)
 
-#### Viewing file
-###### View entire file
+### Viewing file
+##### View entire file
 Use `cat` command for viewing entire file.
 ```bash
 cat filename.txt
 ```
 
 
-###### View first 2 lines
+##### View first 2 lines
 For viewing from head ,use `head -n ` as:
 ```bash
 head -n 2 filename.txt
 ```
 
 
-###### View last 3 lines
+##### View last 3 lines
 For viewing from tail , use `tail -n ` as:
 ```bash
 tail -n 3 filename.txt
@@ -157,19 +157,19 @@ tail -n 3 filename.txt
 #### EXAMPLE:
 ![6](./images/6.png)
 
-#### Copying/Moving File
-###### Copy file
+### Copying/Moving File
+##### Copy file
 To copy file ,use `cp` like :
 ```bash
 cp source.txt destination.txt
 ```
-###### Move/rename file
+##### Move/rename file
 To move/rename file , use `mv` as:
 ```bash
 mv oldname.txt newname.txt
 ```
 
-###### Move file to different directory
+##### Move file to different directory
 To move file to different directory , use `mv` as:
 ```bash
 mv file.txt /path/to/directory/
@@ -179,20 +179,20 @@ mv file.txt /path/to/directory/
 
 
 ## 6.Working with Text Files
-###### grep:
+##### grep:
 Use `grep` to search for some text in a file .
 ##### For Instance:
 Search for "computing" in text1.txt file
 ```bash
 grep "computing" file1.txt
 ```
-###### cut:
+##### cut:
 To cur some specific part from a file , use `cut` like :
 Get characters 5-10 from each line
 ```bash
 cut -c5-10 file1.txt
 ```
-###### paste:
+##### paste:
 To ,erge two files line by line , use `paste` as:
 ```bash
 paste file1.txt backup.log
