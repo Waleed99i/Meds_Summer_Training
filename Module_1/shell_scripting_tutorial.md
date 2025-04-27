@@ -182,7 +182,7 @@ mv file.txt /path/to/directory/
 ##### grep:
 Use `grep` to search for some text in a file .
 ##### For Instance:
-Search for "computing" in text1.txt file
+Search for "computing" in file1.txt file
 ```bash
 grep "computing" file1.txt
 ```
