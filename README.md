@@ -5,7 +5,7 @@
 </p>
 
 
-## CheckList of Taks so far
+## CheckList of Tasks so far
 - [x] Linux Shell Scripting
 - [x] Vim and Vs Code Editors
 - [x] Git and GitHub
