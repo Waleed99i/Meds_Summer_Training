@@ -182,18 +182,18 @@ mv file.txt /path/to/directory/
 ##### grep:
 Use `grep` to search for some text in a file .
 ##### For Instance:
-Search for "computing" in file1.txt file
+To search for "computing" in file1.txt file
 ```bash
 grep "computing" file1.txt
 ```
 ##### cut:
-To cur some specific part from a file , use `cut` like :
+To cut some specific part from a file , use `cut` like :
 Get characters 5-10 from each line
 ```bash
 cut -c5-10 file1.txt
 ```
 ##### paste:
-To ,erge two files line by line , use `paste` as:
+To merge two files line by line , use `paste` as:
 ```bash
 paste file1.txt backup.log
 ```
