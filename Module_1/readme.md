@@ -36,7 +36,7 @@ Check your shell:
 echo $SHELL
 ```
 
-![checking shell](./1.png)
+![checking shell](./images/1.png)
 
 # 2.Your First Script
 
@@ -53,7 +53,7 @@ and then type `Esc` and then `:wq` it will write and quit
 
 just like below 
 
-![vim](./2.png)
+![vim](./images/2.png)
 
 ### Understanding the Script Line-by-Line
 `#!/bin/bash` : This is called a shebang. It tells the system which interpreter to use.
@@ -84,7 +84,7 @@ Since you have just made it so it'll be empty for now . Don't panic
 
 `rm file1.txt`
 
-![commands](./3.png)
+![commands](./images/3.png)
 
 #### Remove directory:
 
@@ -109,14 +109,14 @@ You may wonder that I don't have backup.log file . Don't worry it will automatic
 
 ###### You can see inside of a file by `cat` command
 
-![fourth](4.png)
+![fourth](./images/4.png)
 
 
 ## 5.File Manipulation
 First let write a pargraph in one of our files to observe the changes . 
 I am writing paragraph in file1.txt
 
-![5](5.png)
+![5](./images/5.png)
 
 #### Viewing file
 ###### View entire file
@@ -131,7 +131,7 @@ I am writing paragraph in file1.txt
 `tail -n 3 filename.txt`
 
 #### EXAMPLE:
-![6](6.png)
+![6](./images/6.png)
 
 #### Copying/Moving File
 ###### Copy file
@@ -144,7 +144,7 @@ I am writing paragraph in file1.txt
 `mv file.txt /path/to/directory/`
 
 #### EXAMPLE
-![7](7.png)
+![7](./images/7.png)
 
 
 ## 6.Working with Text Files
@@ -160,7 +160,7 @@ Get characters 5-10 from each line
 Merge two files line by line
 `paste file1.txt backup.log`
 
-![files](8.png)
+![files](./images/8.png)
 
 ## 7.Variables and Substitution
 
@@ -183,7 +183,7 @@ Merge two files line by line
     echo "This is a log entry" >> logfile.txt
     ```
 
-![9](9.png)
+![9](./images/9.png)
 
 ## 9.Control Structures
 
@@ -207,7 +207,7 @@ fi
 
 - To run it use `bash num.sh`
 ### EXAMPLE
-![10](10.png)
+![10](./images/10.png)
 
 ## 10.Bash Comparison Operators Cheat Sheet
 
@@ -240,7 +240,7 @@ for i in {1..5}; do
 done
 ```
 You will get output like :
-![11](11.png)
+![11](./images/11.png)
 
 #### - Loop Through Files
 ```
@@ -259,7 +259,7 @@ done
 ```
 
 You wil get Output like: 
-![12](12.png)
+![12](./images/12.png)
 
 ### While Loop:
 ```
@@ -272,7 +272,7 @@ done
 ```
 
 You will get Output like: 
-![13](13.png)
+![13](./images/13.png)
 
 ## 11.Functions
 Use functions to keep scripts modular and clean.
@@ -284,7 +284,7 @@ greet "Waleed"
 ```
 
 You will get Output like:
-![14](14.png)
+![14](./images/14.png)
 
 
 ## 12.Conclusion:
@@ -298,5 +298,4 @@ This tutorial provides a complete beginner-friendly journey into shell scripting
 [MIT Missing Semester: Shell](https://missing.csail.mit.edu/2020/course-shell/)
 
 [MIT Missing Semester: Shell Tools](https://missing.csail.mit.edu/2020/shell-tools/)
-
 
