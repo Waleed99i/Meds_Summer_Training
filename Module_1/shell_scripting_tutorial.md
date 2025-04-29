@@ -129,7 +129,7 @@ You may wonder that I don't have backup.log file . Don't worry it will automatic
 
 
 ## 5.File Manipulation
-First let write a pargraph in one of our files to observe the changes . 
+First let's write a pargraph in one of our files to observe the changes. 
 I am writing paragraph in file1.txt
 
 ![5](./images/5.png)
@@ -143,14 +143,14 @@ cat filename.txt
 
 
 ##### View first 2 lines
-For viewing from head ,use `head -n ` as:
+For viewing from the start,use `head -n ` as:
 ```bash
 head -n 2 filename.txt
 ```
 
 
 ##### View last 3 lines
-For viewing from tail , use `tail -n ` as:
+For viewing from the end, use `tail -n ` as:
 ```bash
 tail -n 3 filename.txt
 ```
@@ -159,7 +159,7 @@ tail -n 3 filename.txt
 
 ### Copying/Moving File
 ##### Copy file
-To copy file ,use `cp` like :
+`cp` command basically copies source file and then paste it in the destination file :
 ```bash
 cp source.txt destination.txt
 ```
@@ -195,7 +195,7 @@ To get characters 5-10 from each line :
 cut -c5-10 file1.txt
 ```
 ##### paste:
-To merge two files line by line , use `paste` as:
+To merge two files line by line , use `paste` command as:
 ```bash
 paste file1.txt backup.log
 ```
