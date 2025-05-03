@@ -10,8 +10,8 @@
 - [x] Vim and Vs Code Editors
 - [x] Git and GitHub
 - [x] Markdown Language
-- [ ] MakeFiles
-- [ ] Verilator
-- [ ] GTKWave
+- [x] MakeFiles
+- [x] Verilator
+- [x] GTKWave
 
 Shell Scripting Tutorial is in the `shell_scripting_tutorial.md` of `Module_1` directory
