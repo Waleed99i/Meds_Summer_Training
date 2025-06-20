@@ -1,0 +1,29 @@
+ENTRY(_start)
+
+SECTIONS
+{
+  . = 0x80000000;
+
+  .text : {
+    *(.text)                  /* Program instructions */
+  }
+
+  . = 0x80001000;
+
+  .data : {
+    *(.data)                  /* Initialized data */
+  }
+
+  .bss : {
+    *(.bss)                   /* Uninitialized data and stack */
+    stack_top = .;           /* Define top of stack */
+  }
+
+  . = ALIGN(8);
+
+  .tohost : {
+    *(.tohost)                /* Host communication section */
+  }
+}
+
+
